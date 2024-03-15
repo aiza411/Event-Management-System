@@ -1,3 +1,38 @@
+@media only screen and (max-width:1024px) {
+    .edgtf-boxed.  .mobile-header-appear .edgtf-mobile-header-inner {
+        width: 818px;
+        left: auto
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .edgtf-boxed  .mobile-header-appear .edgtf-mobile-header-inner {
+        width: 650px
+    }
+    .edgtf-footer-top-holder .edgtf-column-inner {
+        border-left: none
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .edgtf-boxed  .mobile-header-appear .edgtf-mobile-header-inner {
+        width: 470px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .edgtf-boxed  .mobile-header-appear .edgtf-mobile-header-inner {
+        width: 350px
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .edgtf-boxed  .mobile-header-appear .edgtf-mobile-header-inner {
+        width: 96%
+    }
+}
+
+/***************************************************************************************/
 @media only screen and (max-width:1200px) {
     .edgtf-container-inner,
     .edgtf-grid,
@@ -127,7 +162,7 @@
 }
 
 @media only screen and (max-width:1200px) {
-    .edgtf-drop-down .wide .second>.inner>ul {
+    .drop-down .wide .second>.inner>ul {
         width: 950px
     }
 }
@@ -139,7 +174,7 @@
     .edgtf-mobile-header {
         display: block
     }
-    .edgtf-drop-down .wide .second>.inner>ul {
+    .drop-down .wide .second>.inner>ul {
         width: 768px
     }
 }
@@ -165,39 +200,6 @@
     }
 }
 
-@media only screen and (max-width:1024px) {
-    .edgtf-boxed.edgtf-sticky-up-mobile-header .mobile-header-appear .edgtf-mobile-header-inner {
-        width: 818px;
-        left: auto
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .edgtf-boxed.edgtf-sticky-up-mobile-header .mobile-header-appear .edgtf-mobile-header-inner {
-        width: 650px
-    }
-    .edgtf-footer-top-holder .edgtf-column-inner {
-        border-left: none
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .edgtf-boxed.edgtf-sticky-up-mobile-header .mobile-header-appear .edgtf-mobile-header-inner {
-        width: 470px
-    }
-}
-
-@media only screen and (max-width:480px) {
-    .edgtf-boxed.edgtf-sticky-up-mobile-header .mobile-header-appear .edgtf-mobile-header-inner {
-        width: 350px
-    }
-}
-
-@media only screen and (max-width:320px) {
-    .edgtf-boxed.edgtf-sticky-up-mobile-header .mobile-header-appear .edgtf-mobile-header-inner {
-        width: 96%
-    }
-}
 
 @media only screen and (max-width:1024px) {
     .edgtf-title.edgtf-has-background {

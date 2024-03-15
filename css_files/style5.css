@@ -14,13 +14,13 @@ h5 a:hover,
 h6 a:hover,
 a,
 p a,
-.edgtf-main-menu ul li:hover a,
-.edgtf-main-menu ul li.edgtf-active-item a,
-body:not(.edgtf-menu-item-first-level-bg-color) .edgtf-main-menu>ul>li:hover>a,
-.edgtf-main-menu>ul>li.edgtf-active-item>a,
-.edgtf-drop-down .second .inner>ul>li:hover>a,
-.edgtf-drop-down .second .inner ul li.sub ul li:hover>a,
-.edgtf-drop-down .wide .second .inner>ul>li>a:hover,
+.main-menu ul li:hover a,
+.main-menu ul li.edgtf-active-item a,
+body:not(.edgtf-menu-item-first-level-bg-color) .main-menu>ul>li:hover>a,
+.main-menu>ul>li.edgtf-active-item>a,
+.drop-down .second .inner>ul>li:hover>a,
+.drop-down .second .inner ul li.sub ul li:hover>a,
+.drop-down .wide .second .inner>ul>li>a:hover,
 .edgtf-header-vertical .edgtf-vertical-dropdown-float .second .inner ul li a:hover,
 .edgtf-header-vertical .edgtf-vertical-dropdown-toggle .second .inner ul li a:hover,
 .edgtf-header-vertical .edgtf-vertical-menu ul li a:hover,
@@ -56,10 +56,10 @@ input.wpcf7-form-control.wpcf7-submit:hover,
 .edgtf-pie-chart-holder .edgtf-to-counter,
 .edgtf-pie-chart-holder .edgtf-percent-mark,
 .amount,
-.edgtf-drop-down .wide .second ul li .edgtf-featured-icon.icon-fire,
-.edgtf-drop-down .second .inner ul li.sub a i.edgtf-menu-arrow,
-.edgtf-main-menu .second ul li a .menu_icon,
-.edgtf-main-menu .second a:hover>.item_outer .item_text .menu_icon,
+.drop-down .wide .second ul li .edgtf-featured-icon.icon-fire,
+.drop-down .second .inner ul li.sub a i.edgtf-menu-arrow,
+.main-menu .second ul li a .menu_icon,
+.main-menu .second a:hover>.item_outer .item_text .menu_icon,
 .edgtf-title .edgtf-title-holder .edgtf-breadcrumbs a,
 .edgtf-title .edgtf-title-holder .edgtf-breadcrumbs span,
 .edgtf-portfolio-single-holder .edgtf-portfolio-single-nav a:hover,
@@ -149,12 +149,12 @@ blockquote .edgtf-icon-quotations-holder,
 input.wpcf7-form-control.wpcf7-submit,
 #edgtf-back-to-top,
 .edgtf-portfolio-list-holder.edgtf-ptf-standard article .edgtf-item-icons-holder a,
-.edgtf-main-menu>ul>li>a span.plus,
-.edgtf-drop-down .second a:not(.no_link) .item_inner:after,
-.edgtf-drop-down .wide .second>.inner>ul>li>a:after,
-.edgtf-drop-down .narrow ul li a .item_outer:before,
-.edgtf-header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner .edgtf-side-menu-button-opener,
-.edgtf-header-standard .edgtf-sticky-header .edgtf-position-right-inner .edgtf-side-menu-button-opener,
+.main-menu>ul>li>a span.plus,
+.drop-down .second a:not(.no_link) .item_inner:after,
+.drop-down .wide .second>.inner>ul>li>a:after,
+.drop-down .narrow ul li a .item_outer:before,
+.edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner .edgtf-side-menu-button-opener,
+.header-standard .edgtf-sticky-header .edgtf-position-right-inner .edgtf-side-menu-button-opener,
 .edgtf-team.main-info-on-hover .edgtf-team-social-holder .edgtf-icon-shortcode:hover,
 .edgtf-call-to-action,
 .edgtf-image-2,
@@ -181,16 +181,16 @@ input.wpcf7-form-control.wpcf7-submit,
 .fs-container:hover .fs-cont-date,
 .woocommerce.widget input[type="submit"],
 .woocommerce.widget button,
-.edgtf-drop-down .wide .second ul ul li a:not(.edgtf-item-with-icon) .item_outer:before,
+.drop-down .wide .second ul ul li a:not(.edgtf-item-with-icon) .item_outer:before,
 .edgtf-pagination li.active span,
-.edgtf-main-menu>ul>li>a .item_title:after,
+.main-menu>ul>li>a .item_title:after,
 .edgtf-fs-nav .nav_but:before {
     background-color: #c5ac76;
 }
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/assets/custom-styles/general-custom-styles.php edgtf_quadric_design_styles function */
 
-.edgtf-drop-down .second,
+.drop-down .second,
 .edgtf-progress-bar .edgtf-progress-number-wrapper.edgtf-floating .edgtf-down-arrow,
 .edgtf-btn.edgtf-btn-solid,
 .edgtf-btn.edgtf-btn-outline,
@@ -234,21 +234,21 @@ input.wpcf7-form-control.wpcf7-submit,
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/assets/custom-styles/general-custom-styles.php edgtf_quadric_design_styles function */
 
-.edgtf-main-menu>ul>li:hover .item_title:before,
-.edgtf-main-menu>ul>li:hover .item_title:after {
+.main-menu>ul>li:hover .item_title:before,
+.main-menu>ul>li:hover .item_title:after {
     left: calc(100% + 2px);
 }
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/assets/custom-styles/general-custom-styles.php edgtf_quadric_design_styles function */
 
-.edgtf-drop-down .second li>a:hover .item_inner:before,
-.edgtf-drop-down .second li>a:hover .item_inner:after {
+.drop-down .second li>a:hover .item_inner:before,
+.drop-down .second li>a:hover .item_inner:after {
     left: calc(100% + 1px);
 }
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/assets/custom-styles/general-custom-styles.php edgtf_quadric_design_styles function */
 
-.edgtf-drop-down .second {
+.drop-down .second {
     top: calc(100% + 1px);
 }
 
@@ -718,21 +718,21 @@ input.wpcf7-form-control.wpcf7-submit,
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/framework/modules/header/custom-styles/header.inc edgtf_quadric_header_standard_menu_area_styles function */
 
-.edgtf-header-standard .edgtf-page-header .edgtf-logo-wrapper a {
+.header-standard .edgtf-page-header .edgtf-logo-wrapper a {
     max-height: 72px;
 }
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/framework/modules/header/custom-styles/header.inc edgtf_quadric_header_standard_menu_area_styles function */
 
-.edgtf-header-standard .edgtf-page-header .edgtf-menu-area {
+.header-standard .edgtf-page-header .edgtf-menu-area {
     background-color: rgba(0, 0, 0, 0.55);
     height: 80px;
 }
 
 /* generated in /home/dawatpak/public_html/wp-content/themes/quadric/framework/modules/header/custom-styles/header.inc edgtf_quadric_header_standard_menu_area_styles function */
 
-.edgtf-header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner .edgtf-search-opener,
-.edgtf-header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner .edgtf-side-menu-button-opener {
+.header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner .edgtf-search-opener,
+.header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner .edgtf-side-menu-button-opener {
     width: 80px;
 }
 
@@ -756,17 +756,17 @@ input.wpcf7-form-control.wpcf7-submit,
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-.edgtf-main-menu.edgtf-default-nav>ul>li>a span.plus {
+.main-menu.edgtf-default-nav>ul>li>a span.plus {
     display: block;
     background-color: ;
 }
 
 li.narrow .second .inner ul,
-.edgtf-drop-down .wide .second .inner>ul {
+.drop-down .wide .second .inner>ul {
     padding-bottom: 25px;
 }
 
-.edgtf-drop-down .second {
+.drop-down .second {
     border-top: 0 !important;
 }
 
