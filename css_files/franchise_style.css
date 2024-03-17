@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -7,11 +7,14 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    height: 60px;
+    opacity: 0.8;
     width: 100%;
     background-color: #333;
-    padding: 10px 20px;
+    padding: 10px 10px; /* Adjusted padding */
     display: flex;
     align-items: center;
+    justify-content: space-between;
     z-index: 1000;
 }
 
@@ -20,18 +23,21 @@ header {
 }
 
 nav {
-    margin-left: 50px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
     list-style-type: none;
-    display: inline-block;
+    justify-content: center; /* Center the list items */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 nav ul li:last-child {
@@ -42,10 +48,28 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
+    font-size: 17px; 
+    font-weight: bold;
+    position: relative; 
+    z-index: 1;
+    padding-left: 10px;
+    background-image: url('/assets/images/square.png');
+    background-repeat: no-repeat;
+    background-size: 5px;
+    background-position: left center;
 }
 
 nav ul li a:hover {
     color: #f00;
+}
+
+.sidebar-toggle {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 .slider {
