@@ -5,8 +5,312 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            padding-bottom: 100px; /* Adjusted padding for the footer */
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1,h2 {
+            text-align: center;
+            color: #c5ac76;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h4 {
+            color:#3d3d3d;
+            font-size: 18px;
+        }
+
+        h5 {
+            color: black;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .menu-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #8B4513;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #5C4033;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        ul {
+            color:#3d3d3d;
+            width: 200px;
+            font-size: 18px;
+            list-style-type: none;
+            margin: 100px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 2px;
+        }
+        li::before {
+            content: "⚛    ";
+            color: #c5ac76;
+        }
+
+        .services-list {
+            display: block;
+        }
+
+        .services-list-child {
+            width: 33.3%;
+            float: left;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .ending-line {
+            width: 50%;
+            border-bottom: 1px solid #c5ac76;
+            margin: 40px auto 30px;
+        }
+
+        .additional-info {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+            color: black;
+        }
+
+        .footer {
+            background-color: #3d3d3d;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 97%;
+        }
+        
+        .services-details{
+            display:block;
+            color:#3d3d3d;
+            font-size: 15px;
+            font-weight: 200;
+        }
+        .services-details-child{
+            width: 25%;
+            float:left;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+        
+    </style>
 </head>
 <body>
+    <div class="Header">
+        <img src="services0.jpeg" alt="Header Image">
+    </div>
+    <div class="content">
+        <h1>Our Services</h1>
+
+        <h4 style="text-align: center;">
+            Dawat is a full fledged Event Management company with a wide spectrum of services to provide you one window solution.
+        </h4>
+
+        <div class="services-list">
+            <div class="services-list-child">
+                <ul>
+                    <li>Full Event Services</li>
+                    <li>Decor Services</li>
+                    <li>Event Managment</li>
+                    <li>Dance Floors</li>
+                    <li>Food & Catering</li>
+                    <li>Card Printing</li>
+                </ul>
+            </div>
+
+            <div class="services-list-child">
+                <ul>
+                    <li>Photography</li>
+                    <li>Makeup</li>
+                    <li>Security</li>
+                    <li>Light & Sound</li>
+                    <li>P.R. Events</li>
+                    <li>DJ - Disk Jokey</li>
+                </ul>
+            </div>
+
+            <div class="services-list-child">
+                <ul>
+                    <li>Wedding Entrances</li>
+                    <li>Floral & Stages</li>
+                    <li>Destination Weddings</li>
+                    <li>Bridal Shower</li>
+                    <li>Birthdays</li>
+                    <li>Corporate Events</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="services-details">
+            <div class="services-details-child">
+                <img src="fullEvent.jpg">
+                <h5>EVENTS FULL SERVICE</h5>
+                <p>We provide full services for all your events, Shaadi, Valima, Mayun, Dholki, Mehndis, Corporate Events, Dinners, Birthdays, Baby showers etc.</p>
+                <p>Please contact our Event Managers for further details.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="decor.jpg">
+                <h5>DECOR SERVICES</h5>
+                <p>We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well.</p>
+                <p>Please contact our Event Managers for further details.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="eventManagment.jpg">
+                <h5>EVENT MANAGMENT</h5>
+                <p>Our Event Managers can help make your dreams become reality,</p>
+                <p>Please contact for further details.</p>
+            </div>
+        </div>
+
+        <div class="services-details">
+            <div class="services-details-child">
+                <img src="danceFloors.jpg">
+                <h5>DANCE FLOORS</h5>
+                <p>We have following options for you in Dance floors:</p>
+                <p>• Acrylic   • Panaflex   • LED</p>
+                <p>For the right choice of floor please contact our Event managers.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="foodCatering.jpg">
+                <h5>FOOD & CATERING</h5>
+                <p>We provide catering for all sorts of events. The gathering should not be less than 50 people.</p>
+                <p>To select a perfect menu for your event please visit the Menu section for details.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="cardPrinting.jpg">
+                <h5>CARD PRINTING</h5>
+                <p>We provide card printing services as well.</p>
+                <p>Please make your booking with us four months in advance.</p>
+            </div>
+        </div>
+
+        <div class="services-details">
+            <div class="services-details-child">
+                <img src="photography.jpg">
+                <h5>PHOTOGRAPHY</h5>
+                <p>• O’ Shoot – Mutahir Mahmood<br>
+                    • Studio9 – Nusrat Jamal<br>
+                    • Lighthouse Photography – Ali Khurshid<br>
+                    • Fatima Tariq Photography<br>
+                    • Kashif Dossani Photography</p>
+                <p>Please contact our Event Managers for further details.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="makeup.jpg">
+                <h5>MAKEUP</h5>
+                <p>• Omayr Waqar<br>
+                    • Nabilas<br>
+                    • Natasha Salon<br>
+                    • Shamain Salon<br>
+                    • Anam Falak</p>
+                <p>Please contact our Event Managers for further details.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="security.jpg">
+                <h5>SECURITY</h5>
+                <p>We provide private security services in association with SGS security, which is one of the leading security companies providing services for over a decade. Services include wide range of Guarding Services, Technical Security Solutions etc. Please contact for further details.</p>
+            </div>
+        </div>
+
+        <div class="services-details">
+            <div class="services-details-child">
+                <img src="lightSound.jpg">
+                <h5>LIGHT & SOUND</h5>
+                <p>• Theatre Lighting<br>
+                    • 3D Projection<br>
+                    • LED Lighting<br>
+                    • Par Can Lights<br>
+                    • Walkway Lamps<br>
+                    • General Lighting<br>
+                    • Concert Lighting<br>
+                    • Fairy Lights<br>
+                    • Chandeliers</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="prEvent.jpg">
+                <h5>P.R. EVENTS</h5>
+                <p>We function as a full business partner to our clients, providing PR consulting and integrated marketing services that build brand reputation and offer real solutions to business challenges.</p>
+            </div>
+
+            <div class="services-details-child">
+                <img src="dj.jpg">
+                <h5>DISK JOKEY - DJ</h5>
+                <p>For the right choice of DJ for your musical event, please contact our Event manager.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Dawat. All Rights Reserved.</p>
+        </div>
+
+    </div>
 </body>
+
 </html>
