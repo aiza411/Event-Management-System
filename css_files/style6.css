@@ -1,5 +1,5 @@
 @media only screen and (max-width:1024px) {
-    .edgtf-boxed.  .mobile-header-appear .edgtf-mobile-header-inner {
+    .edgtf-boxed .mobile-header-appear .edgtf-mobile-header-inner {
         width: 818px;
         left: auto
     }
@@ -31,6 +31,55 @@
         width: 96%
     }
 }
+
+@media only screen and (max-width:1200px) {
+    .edgtf-boxed .edgtf-page-header .edgtf-fixed-wrapper.fixed,
+    .edgtf-boxed .edgtf-page-header .edgtf-sticky-header {
+        width: 1000px
+    }
+    footer .edgtf-footer-top.edgtf-footer-top-full {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+    .edgtf-footer-top-holder .edgtf-four-columns>.edgtf-four-columns-inner,
+    .edgtf-footer-top-holder .edgtf-three-columns>.edgtf-three-columns-inner,
+    .edgtf-footer-top-holder .edgtf-two-columns-50-50>.edgtf-two-columns-50-50-inner {
+        margin: 0 -15px
+    }
+    .edgtf-footer-top-holder .edgtf-four-columns .edgtf-column .edgtf-column-inner,
+    .edgtf-footer-top-holder .edgtf-three-columns .edgtf-column .edgtf-column-inner,
+    .edgtf-footer-top-holder .edgtf-two-columns-50-50 .edgtf-column .edgtf-column-inner {
+        padding: 0 15px
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .edgtf-four-columns .edgtf-column,
+    .edgtf-three-columns .edgtf-column,
+    .edgtf-three-columns .edgtf-column1,
+    .edgtf-three-columns .edgtf-column2,
+    .edgtf-three-columns .edgtf-column3,
+    .edgtf-two-columns-25-75 .edgtf-column,
+    .edgtf-two-columns-25-75 .edgtf-column1,
+    .edgtf-two-columns-25-75 .edgtf-column2,
+    .edgtf-two-columns-33-66 .edgtf-column,
+    .edgtf-two-columns-33-66 .edgtf-column1,
+    .edgtf-two-columns-33-66 .edgtf-column2,
+    .edgtf-two-columns-50-50 .edgtf-column,
+    .edgtf-two-columns-50-50 .edgtf-column1,
+    .edgtf-two-columns-50-50 .edgtf-column2,
+    .edgtf-two-columns-66-33 .edgtf-column,
+    .edgtf-two-columns-66-33 .edgtf-column1,
+    .edgtf-two-columns-66-33 .edgtf-column2,
+    .edgtf-two-columns-75-25 .edgtf-column,
+    .edgtf-two-columns-75-25 .edgtf-column1,
+    .edgtf-two-columns-75-25 .edgtf-column2 {
+        width: 100%
+    }
+}
+
+
 
 /***************************************************************************************/
 @media only screen and (max-width:1200px) {
@@ -136,30 +185,6 @@
     }
 }
 
-@media only screen and (max-width:768px) {
-    .edgtf-four-columns .edgtf-column,
-    .edgtf-three-columns .edgtf-column,
-    .edgtf-three-columns .edgtf-column1,
-    .edgtf-three-columns .edgtf-column2,
-    .edgtf-three-columns .edgtf-column3,
-    .edgtf-two-columns-25-75 .edgtf-column,
-    .edgtf-two-columns-25-75 .edgtf-column1,
-    .edgtf-two-columns-25-75 .edgtf-column2,
-    .edgtf-two-columns-33-66 .edgtf-column,
-    .edgtf-two-columns-33-66 .edgtf-column1,
-    .edgtf-two-columns-33-66 .edgtf-column2,
-    .edgtf-two-columns-50-50 .edgtf-column,
-    .edgtf-two-columns-50-50 .edgtf-column1,
-    .edgtf-two-columns-50-50 .edgtf-column2,
-    .edgtf-two-columns-66-33 .edgtf-column,
-    .edgtf-two-columns-66-33 .edgtf-column1,
-    .edgtf-two-columns-66-33 .edgtf-column2,
-    .edgtf-two-columns-75-25 .edgtf-column,
-    .edgtf-two-columns-75-25 .edgtf-column1,
-    .edgtf-two-columns-75-25 .edgtf-column2 {
-        width: 100%
-    }
-}
 
 @media only screen and (max-width:1200px) {
     .drop-down .wide .second>.inner>ul {
@@ -179,26 +204,6 @@
     }
 }
 
-@media only screen and (max-width:1200px) {
-    .edgtf-boxed .edgtf-page-header .edgtf-fixed-wrapper.fixed,
-    .edgtf-boxed .edgtf-page-header .edgtf-sticky-header {
-        width: 1000px
-    }
-    footer .edgtf-footer-top.edgtf-footer-top-full {
-        padding-left: 30px;
-        padding-right: 30px
-    }
-    .edgtf-footer-top-holder .edgtf-four-columns>.edgtf-four-columns-inner,
-    .edgtf-footer-top-holder .edgtf-three-columns>.edgtf-three-columns-inner,
-    .edgtf-footer-top-holder .edgtf-two-columns-50-50>.edgtf-two-columns-50-50-inner {
-        margin: 0 -15px
-    }
-    .edgtf-footer-top-holder .edgtf-four-columns .edgtf-column .edgtf-column-inner,
-    .edgtf-footer-top-holder .edgtf-three-columns .edgtf-column .edgtf-column-inner,
-    .edgtf-footer-top-holder .edgtf-two-columns-50-50 .edgtf-column .edgtf-column-inner {
-        padding: 0 15px
-    }
-}
 
 
 @media only screen and (max-width:1024px) {
