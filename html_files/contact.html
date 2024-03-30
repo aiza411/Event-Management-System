@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: rgb(233, 230, 230);
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            padding-bottom: 100px;
+            /* Adjusted padding for the footer */
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form {
+            width: 45%;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label[for="name"],
+        label[for="email"],
+        label[for="message"] {
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #c5ac76;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .map {
+            width: 45%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 1.5px;
+            background-color: #c5ac76;
+            margin-top: 0;
+        }
+
+        hr {
+            background-color: #c5ac76;
+            height: 0.8px;
+            width: 30%;
+        }
+
+        .footer {
+            background-color: #3d3d3d;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        #navigationBar {
+            z-index: 101;
+            background-color: black;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+            position: fixed;
+        }
+
+        .sidebarBtn {
+            background-color: rgba(242, 206, 88, 0.767);
+            border: none;
+            color: white;
+            height: 60px;
+            padding: 20px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: absolute;
+            right: 0;
+            z-index: 1100
+        }
+
+        #NavLogo {
+            position: absolute;
+            left: 0;
+        }
+
+        #LogoImg {
+            height: 40px;
+        }
+
+        .menu {
+            margin-left: 30px;
+        }
+
+        .menu a {
+            margin-right: 20px;
+            font-size: 19px;
+            background-repeat: no-repeat;
+            background-size: 4px 4px;
+            background-position: right center;
+            padding-right: 19px;
+            text-decoration: none;
+        }
+
+        .menu a:not(:last-child) {
+            background-image: url('/assets/Images/Footer/square.png');
+        }
+
+        .menu a:last-child {
+            background-image: none;
+            margin-right: 0;
+        }
+
+        .sidebarBtn .fa-bars {
+            font-size: 20px;
+        }
+
+        .sidebarBtn:hover {
+            background-color: rgb(242, 206, 88);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .sidebarBtn:hover .fa-bars:before {
+            content: "\f105";
+            font-size: inherit;
+            padding: 4px 4px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 60px;
+            opacity: 0.8;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            transition: right 0.3s ease;
+            z-index: 1000;
+        }
+
+        .sidebar .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar .sidebar-content {
+            padding: 20px;
+        }
+
+        .sidebar .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar .logo img {
+            height: 200px;
+            width: 200px;
+            align-self: center;
+        }
+
+        .sidebar p {
+            margin-top: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .sidebar .social-icons {
+            margin-top: 20px;
+        }
+
+        .sidebar .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+
+        .sidebar.open {
+            right: 0;
+        }
+
+        .social_icons {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social_icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        #myBtn {
+            position: fixed;
+            background-color: rgba(177, 135, 51, 1);
+            bottom: 20px;
+            right: 30px;
+            text-align: center;
+            z-index: 1300;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 2px;
+            font-size: 18px;
+        }
+
+        #myBtn:hover {
+            background-color: rgb(221, 165, 53);
+        }
+
+
+        .footerContent {
+            background-color: rgb(32, 27, 27);
+            height: 250px;
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+        }
+
+        .belowFooter {
+            background-color: rgb(32, 27, 27);
+            height: 30px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            opacity: 0.9;
+        }
+
+        #copyright {
+            font-size: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 25px 20px;
+            height: 250px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footerHeading {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+
+        .AboutText {
+            font-size: 17px;
+            margin-top: 15px;
+            text-align: left;
+            padding-right: 30px;
+            padding-left: 30px;
+            font-weight: lighter;
+            line-height: 23px;
+        }
+
+        .ContactInfo {
+            font-size: 17px;
+            margin-top: 15px;
+            text-align: left;
+            padding-right: 30px;
+            padding-left: 30px;
+            font-weight: lighter;
+        }
+
+        .PostsText {
+            font-size: 17px;
+            margin-top: 15px;
+            text-align: left;
+            padding-right: 30px;
+            padding-left: 90px;
+            font-weight: lighter;
+            text-decoration: none;
+            list-style-position: inside;
+        }
+
+        .PostsText li {
+            text-decoration: none;
+            list-style-type: none;
+            background-image: url('/assets/Images/Footer/grey_square.jpg');
+            background-repeat: no-repeat;
+            background-size: 7px 7px;
+            background-position: 0 5px;
+            padding-left: 30px;
+            padding-bottom: 10px;
+        }
+
+        .zigzag {
+            --c: #e99611;
+            --s: 0.15em;
+            line-height: 1.1em;
+            padding-bottom: calc(2.7 * var(--s));
+            background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0 bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
+                conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) bottom 0 left var(--s) / calc(2 * var(--s)) var(--s) repeat-x;
+            --_m: linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0) 50% / var(--_p, 0%) padding-box no-repeat;
+            -webkit-mask: var(--_m);
+            mask: var(--_m);
+            transition: 0.5s;
+        }
+
+        .zigzag:hover {
+            cursor: pointer;
+            --_p: 30%;
+            color: var(--c);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navigationBar">
+
+            <a id="NavLogo"><img id="LogoImg" src="/assets/Images/Home/logo.png" alt="Logo"></a>
+
+            <div class="menu">
+                <a href="/html_files/home.html">Home</a>
+                <a href="">Services</a>
+                <a>Gallery</a>
+                <a href="/html_files/menu.html">Menu</a>
+                <a href="/html_files/franchise.html">Franchise</a>
+                <a href="/html_files/contact.html">Contact Us</a>
+            </div>
+
+            <button class="sidebarBtn"><i class="fa fa-bars"></i></button>
+        </nav>
+
+    </header>
+
+    <section class="sidebar">
+        <div class="container">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <img src="/assets/Images/Home/SideBar/logo_2.png" alt="Dawat Pakistan">
+                </div>
+                <p>Explore our creative options, and let us make your next event everything you dream of and more.</p>
+
+                <div class="social_icons">
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img src="/lighting-header.jpg" alt="Header Image" style="width: 100%; height: 500px;">
+
+    <div class="content">
+        <h1 style="text-align: center;color: #c5ac76;font-size: 50px;position: relative;margin-bottom: 20px;">Contact Us
+        </h1>
+
+        <div class="form">
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" style="color: grey;" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <hr>
+
+        <h2 style="text-align: center;color: #c5ac76;font-size: 40px;margin-bottom: 20px; margin-top: 50px;">Find Us
+        </h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1162496859597!2d106.82168631476957!3d-6.201136995498161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2b9c081ca9b%3A0x301cc88770c28d44!2sMonas!5e0!3m2!1sen!2sid!4v1647407253620!5m2!1sen!2sid"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <hr>
+
+        <h2 style="text-align: center;color: #c5ac76;font-size: 40px; margin-bottom: 20px; margin-top: 50px;">Subscribe
+            to Our Newsletter</h2>
+        <form action="#" method="post" style="text-align: center;">
+            <input type="email" name="email" placeholder="Your Email"
+                style="width: 400px; margin: 0 auto; display: block; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; color: grey;"
+                required>
+            <br>
+            <button type="submit"
+                style="width: 200px; margin: 0 auto; display: block; padding: 10px; font-size: 16px; background-color: #c5ac76; color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+        </form>
+    </div>
+
+    <footer style="background-color: rgb(32, 27, 27); margin-top: 200px;">
+
+        <div class="footerContent">
+
+            <div class="column">
+                <h2 class="footerHeading zigzag">About Dawat</h2>
+                <p class="AboutText">DAWAT is an Event Management, Catering, Photography and PR company located in
+                    Pakistan, which specializes in <span style="color: #ffffff;">weddings, parties, corporate
+                        events</span> and much more. Dawat
+                    uses its expertise to create powerful impressions, to make your event leave a lasting
+                    impression.
+                </p>
+            </div>
+
+            <div class="column">
+                <h2 class="footerHeading zigzag">Recent Posts</h2>
+                <ul class="PostsText">
+                    <li>
+                        <a href="#" style="text-decoration: none;">Bring back the Concerts</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none;">Celebrating Singles</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none;">Designers that reigned this season</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none;">Interactive Birthdays</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2 class="footerHeading zigzag">Contact Us</h2>
+                <div class="ContactInfo">
+                    <p><i class="fa fa-map-marker" style="margin-right:10px; margin-bottom: 10px;"></i>14C, 3rd
+                        Floor,
+                        Lane-9, Islamabad, Pakistan</p>
+                    <p><i class="fa fa-phone" style="margin-right:10px; margin-bottom: 10px;"></i>0322 7888061, 0335
+                        7888062</p>
+                    <p><i class="fa fa-envelope" style="margin-right:10px; margin-bottom: 10px;"></i>info@dawatpk.com
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="belowFooter">
+            <p id="copyright">© Copyright 2022 Dawat Pakistan</p>
+        </div>
+
+    </footer>
+
+
+    <script src="/js_Files/script.js"></script>
+    <script src="/js_Files/home.js"></script>
+</body>
+
+</html>
