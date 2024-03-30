@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgb(233, 230, 230);
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigationBar{
+    z-index: 101;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    position: fixed;
+}
+
+.sidebarBtn {
+    background-color: rgba(242, 206, 88, 0.767);
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    z-index: 1100
+}
+
+#NavLogo{
+    position: absolute;
+    left: 0;
+}
+
+#LogoImg{
+    height: 40px;
+}
+
+.menu{
+    margin-left: 30px;
+}
+
+.menu a {
+    margin-right: 20px;
+    font-size: 19px;
+    background-repeat: no-repeat;
+    background-size: 4px 4px;
+    background-position: right center;
+    padding-right: 19px;
+    text-decoration: none;
+}
+
+.menu a:not(:last-child) {
+    background-image: url('/assets/Images/Footer/square.png');
+}
+
+.menu a:last-child {
+    background-image: none;
+    margin-right: 0;
+}
+
+
+
+
+.sidebarBtn .fa-bars {
+    font-size: 20px;
+}
+  
+.sidebarBtn:hover{
+    background-color: rgb(242, 206, 88);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.sidebarBtn:hover .fa-bars:before{
+    content: "\f105";
+    font-size: inherit;
+    padding: 4px 4px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    opacity: 0.8;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 2000;
+}
+
+.sidebar .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .sidebar-content {
+    padding: 20px;
+}
+
+.sidebar .logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar .logo img {
+    height: 200px;
+    width: 200px;
+    align-self: center;
+}
+
+.sidebar p {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sidebar .social-icons {
+    margin-top: 20px;
+}
+
+.sidebar .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.sidebar.open {
+    right: 0;
+}
+
+.social_icons{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social_icons a{
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+
+#myBtn {
+    position: fixed;
+    background-color: rgba(177, 135, 51, 1);
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+    z-index: 1300;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: rgb(221, 165, 53);
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: #c5ac76;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h4 {
+    color:#3d3d3d;
+    font-size: 18px;
+}
+
+h5 {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.container{
+    position:relative;
+    text-align: center;
+}
+
+.headerText p {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 0%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    color: #a4843f;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.visitgallery {
+    display:block;
+    width: 85%;
+}
+
+.content-child1 {
+    margin-left: 10%;
+    width: 7%;
+    float: left;
+}
+
+.content-child2 {
+    width: 50%;
+    float: left;
+}
+
+.c2heading {
+    text-align: left;
+    color: #c5ac76;
+    font-family: "Poppins", sans-serif;
+    margin-left:5%;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.c2text {
+    text-align: left;
+    color:#3d3d3d;
+    font-family: Raleway , sans-serif;
+    margin-left:5%;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.c2text:hover{
+    text-decoration: underline;
+}
+
+
+.content-child3 {
+    width: 20%;
+    float: left;
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,30%);
+}
+
+.button {
+    width:90%;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-blockl9;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    text-decoration: underline;
+}
+
+.button1 {
+    color: #833ab4;
+}
+.button1:hover {
+    background-color: yellow;
+    background-image: linear-gradient(to right, #ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5b51d8, #405de6);
+    color: white;
+}
+
+.button2 {
+    color: #1877F2;
+}
+.button2:hover {
+    color: white;
+    background-color: #1877F2;
+}
+
+.button3 {
+    color: #FF0000;
+}
+.button3:hover {
+    color: white;
+    background-color: #FF0000;
+}
+
+
+
+
+
+.footerContent{
+    position: relative;
+    background-color: rgb(32, 27, 27);
+    height: 250px;
+    width: 100%;
+    bottom: 30px;
+}
+
+.belowFooter{
+    position: relative;
+    background-color: rgb(32, 27, 27);
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+#copyright{
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 25px 20px;
+    height: 250px; 
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footerHeading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.AboutText{
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: lighter;
+    line-height: 23px;
+}
+
+.ContactInfo{
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: lighter;
+}
+
+.PostsText li {
+    text-decoration: none;
+    list-style-type: none; 
+    
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.PostsText{
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 90px;
+    font-weight: lighter;
+    text-decoration: none;
+    list-style-position: inside;
+}
+
+.PostsText li {
+    text-decoration: none;
+    list-style-type: none; 
+    background-image: url('/assets/Images/Footer/grey_square.jpg');
+    background-repeat: no-repeat;
+    background-size: 7px 7px;
+    background-position: 0 5px; 
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.zigzag {
+    --c: #e99611;
+    --s: 0.15em;
+    line-height: 1.1em;
+    padding-bottom: calc(2.7 * var(--s));
+    background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0
+        bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
+      conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) bottom 0 left
+        var(--s) / calc(2 * var(--s)) var(--s) repeat-x;
+    --_m: linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0) 50% / var(--_p, 0%) padding-box no-repeat;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    transition: 0.5s;
+}
+  
+.zigzag:hover {
+    cursor: pointer;
+    --_p: 30%;
+    color: var(--c);
+}
