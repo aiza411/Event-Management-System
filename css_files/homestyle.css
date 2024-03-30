@@ -154,6 +154,7 @@
 }
 
 .footerContent{
+    position: relative;
     background-color: rgb(32, 27, 27);
     height: 250px;
     width: 100%;
@@ -161,6 +162,7 @@
 }
 
 .belowFooter{
+    position: relative;
     background-color: rgb(32, 27, 27);
     height: 30px;
     width: 100%;
@@ -282,6 +284,18 @@
     opacity: 1;
 }
 
+.content h1{
+    font-size: 75px;
+}
+
+.content p{
+    font-size: 19px; 
+    font-weight: lighter; 
+    margin-top: 15px; 
+    line-height: 25px;
+}
+
+
 @keyframes zoomIn {
     from {
         opacity: 0.8;
@@ -332,6 +346,15 @@
     overflow: hidden;
 }
 
+.carousel_hall h1{
+    color: rgba(177, 135, 51, 0.729); 
+    font-size: 50px; 
+    display: flex ;
+    justify-content: center; 
+    align-content: center; 
+    padding-top: 20px;
+}
+
 
 .dawat_abt{
     background-image: url('/assets/Images/Franchise/background.jpg');
@@ -339,6 +362,18 @@
     background-size: cover;
     height: 400px;
     width: 100%;
+}
+
+.dawat_abt .column img{
+    margin-top: 30px; 
+}
+
+.dawat_abt .column h2{
+    color: rgb(28, 25, 25);
+    font-weight: bold;
+    font-size: 30px; 
+    margin-top: 30px; 
+    margin-bottom: 40px;
 }
 
 .call_for_action{
@@ -363,12 +398,25 @@
     background-size: 20px 20px;
     background-position: left center;
     padding-left: 30px;
+    color:#969696;font-size:14px
 }
 
 .call_for_action_txt{
     color: white;
     font-size: 30px;
     font-weight: bolder;
+}
+
+.fa-angle-double-right{
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-star{
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
 }
 
 .button {
@@ -393,6 +441,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 
 .zigzagline{
     color: rgb(18, 17, 17);
@@ -459,6 +508,20 @@
     filter: brightness(0) invert(1);  
 }
 
+
+.carousel_event_content_col1 p{
+    text-align: left;
+    font-weight: lighter; 
+    font-size: 15px; 
+    line-height: 23px; 
+    padding-right:25px ;
+}
+
+.carousel_event_content_col1 h2{
+    color: black; 
+    margin-bottom: 15px;
+    font-size: 30px;
+}
 
 .event_item{
     height: 100%;
@@ -607,6 +670,15 @@
     border: 2px solid rgb(206, 204, 204);    
 }
 
+.description p{
+    text-align: left;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 400px;
+    line-height: 20px;
+}
+
+
 .button2 {
     width: 100px;
     padding: 10px;
@@ -634,6 +706,10 @@
     justify-content: center;
     flex-direction: column;
     opacity: 0.9;
+}
+
+.paralex h5{
+    margin-top: 15px;
 }
 
 
@@ -716,7 +792,7 @@
     position: absolute;
     padding: 10px;
     color: black;
-    background-color: transparent;
+    background-color: rgba(243, 243, 243, 0.5);
     border: none;
     border-radius: 3px;
     font-weight: bold;

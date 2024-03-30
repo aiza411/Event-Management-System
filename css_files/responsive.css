@@ -1,0 +1,505 @@
+@media only screen and (max-width: 700px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+    #navigationBar {
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+
+    #NavLogo {
+        position: absolute;
+        left: 0;
+    }
+
+    #LogoImg {
+        height: 20px;
+    }
+
+    .sidebarBtn {
+        height: auto;
+        padding: 10px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: absolute;
+        right: 0;
+    }
+
+    .menu {
+        margin-left: 10px;
+    }
+
+    .menu a {
+        margin-right: 10px;
+        font-size: 13px;
+        background-size: 4px 4px;
+        padding-right: 15px;
+    }
+
+
+    .sidebarBtn .fa-bars {
+        font-size: 15px;
+    }
+
+    .sidebarBtn:hover {
+        box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .sidebarBtn:hover .fa-bars:before {
+        padding: 4px 4px;
+    }
+
+    .sidebar {
+        top: 35px;
+    }
+
+    .sidebar.open {
+        right: 0;
+        width: 100%;
+    }
+
+    .sidebar .sidebar-content {
+        padding: 30px;
+    }
+
+
+    .sidebar .logo img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .sidebar p {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .belowFooter {
+        height: auto;
+        width: 100%;
+        bottom: 0;
+    }
+
+    #copyright {
+        font-size: 7px;
+        padding: 5px;
+    }
+
+    .footerHeading {
+        padding-top: 19px;
+        font-size: 10px;
+    }
+
+    .footerContent {
+        height: 200px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .column {
+        padding: 10px 10px;
+    }
+
+    .AboutText,
+    .ContactInfo,
+    .PostsText {
+        font-size: 10px;
+        margin-top: 11px;
+        text-align: center;
+        padding-right: 2px;
+        padding-left: 2px;
+        line-height: 20px;
+    }
+
+    .fa-map-marker,
+    .fa-phone,
+    .fa-envelope {
+        display: none;
+    }
+
+    .PostsText li {
+        background-size: 4px 4px;
+        background-position: 0 5px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    .paralex {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .paralex h1 {
+        font-size: 15px;
+    }
+
+    .paralex h5 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+
+    .button3,
+    .button4 {
+        height: auto;
+        width: auto;
+        padding: 5px 5px;
+        margin-top: 10px;
+        font-size: 9px;
+    }
+
+    .call_for_action {
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .call_for_action_txt {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .fa-angle-double-right,
+    .fa-star {
+        font-size: 6px;
+        margin-left: 0px;
+    }
+
+    .button {
+        height: auto;
+        width: auto;
+        padding: 5px 5px;
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+
+
+    .our_galleries {
+        height: auto;
+        padding: 10px 10px 30px 10px;
+        width: 100%;
+    }
+
+
+    .our_galleries h1 {
+        font-size: 25px;
+    }
+
+    .our_galleries p {
+        padding: 2px;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    .wedding_gallery {
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    .wedding_gallery .description {
+        height: 200px;
+        width: 50%;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description p {
+        text-align: center;
+        font-size: 10px;
+        font-weight: lighter;
+        width: auto;
+        line-height: 15px;
+    }
+
+    .wedding_gallery .image {
+        height: 200px;
+        width: 50%;
+    }
+
+    .zigzagline {
+        background-size: 50px 50px;
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    .button2 {
+        width: 50px;
+        padding: 5px;
+        margin-top: 10px;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 8px;
+    }
+
+
+
+
+    .company_profile {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .company_profile_text {
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .company_profile_text h1 {
+        font-size: 20px;
+    }
+
+    .company_profile_text p {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .company_profile_img {
+        display: none;
+    }
+
+
+    .button1 {
+        height: auto;
+        width: auto;
+        padding: 10px 8px;
+        margin-top: 17px;
+        font-size: 9px;
+    }
+
+    .dream_event {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dream_event p {
+        padding: 3px;
+        font-size: 10px;
+    }
+
+
+    .carousel_event {
+        width: 500px;
+        height: 200px;
+        margin: 15px 25px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel_event_nav {
+        background-color: black;
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carousel_event_content {
+        background-color: beige;
+        height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel_event_nav_btn {
+        height: 15px;
+        width: 15px;
+    }
+
+    .event_item {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    .event_item_selected {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel_event_content_col1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 25px;
+    }
+
+    .carousel_event_content_col2 {
+        display: none;
+    }
+
+    .carousel_event_content_col1 p {
+        text-align: left;
+        font-size: 10px;
+        line-height: 15px;
+        padding-right: 25px;
+    }
+
+    .carousel_event_content_col1 h2 {
+        color: black;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .dawat_abt {
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .dawat_abt .column img {
+        margin-top: 10px;
+        height: 50%;
+    }
+
+    .abt-list {
+        margin-top: 10px;
+        background-size: 10px 10px;
+        background-position: left center;
+        padding-left: 20px;
+        color: #969696;
+        font-size: 10px
+    }
+
+    .dawat_abt .column h2 {
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .carousel_hall {
+        height: auto;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .carousel_hall h1 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+
+
+    .slider {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .slider_item {
+        width: 400px;
+        height: 300px;
+    }
+
+    .slider_item img {
+        height: 300px;
+    }
+
+    #next,
+    #prev {
+        position: absolute;
+        padding: 5px;
+        color: black;
+        background-color: rgba(243, 243, 243, 0.5);
+        font-size: 15px;
+        z-index: 1600;
+    }
+
+
+    .carousel {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .item {
+        height: 500px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+    .content h1{
+        font-size: 45px;
+    }
+    
+    .content p{
+        font-size: 17px; 
+        font-weight: lighter; 
+        margin-top: 15px; 
+        line-height: 23px;
+    }
+
+    .carousel_nav{
+        width: 100%;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+    
+    .carousel_btn{
+        width: 10px;
+        height: 10px;
+        opacity: 0.2;
+        border-radius: 50%;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+    
+    
+
+
+}
