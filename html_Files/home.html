@@ -1,64 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-    <link rel='stylesheet' href='/css_files/home.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css_files/homestyle.css" />
+    <link rel="stylesheet" href="/css_files/responsive.css" />
 
 </head>
+
 <body>
-
     <header>
-        <div class="logo">
-            <img src="/assets/images/logo.png" alt="Logo">
-        </div>
+        <nav id="navigationBar">
 
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Menus</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Franchise</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            <a id="NavLogo"><img id="LogoImg" src="/assets/Images/Home/logo.png" alt="Logo"></a>
 
-        <button class="sidebar-toggle">☰</button>
+            <div class="menu">
+                <a href="/html_files/home.html">Home</a>
+                <a>Services</a>
+                <a>Gallery</a>
+                <a>Menu</a>
+                <a href="/html_files/franchise.html">Franchise</a>
+                <a href="">Contact Us</a>
+            </div>
+
+            <button class="sidebarBtn"><i class="fa fa-bars"></i></button>
+        </nav>
+
     </header>
 
     <section class="sidebar">
         <div class="container">
             <div class="sidebar-content">
                 <div class="logo">
-                    <img src="/assets/images/logo_2.png" alt="Dawat Pakistan">
+                    <img src="/assets/Images/Home/SideBar/logo_2.png" alt="Dawat Pakistan">
                 </div>
                 <p>Explore our creative options, and let us make your next event everything you dream of and more.</p>
-                <!-- <div class="social-icons">
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                </div> -->
+
+                <div class="social_icons">
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#" style="text-decoration: none;"><i style="font-size: 25px;"
+                            class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="slider">
-        <img src="slider1.jpg" alt="Slider Image 1">
-        <img src="slider2.jpg" alt="Slider Image 2">
-        <img src="slider3.jpg" alt="Slider Image 3">
-    </div>
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-angle-double-up" style="font-size: 13px; color: white;"></i>
+        </button>
 
-    <div class="main-content">
-        <h2>Welcome to Our Website</h2>
-        <p>This is the main content section. You can add your content here.</p>
-    </div>
+        <div class="carousel">
+            <div class="item item_selected"
+                style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Top/1.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h1 style="font-size: 75px;">WELCOME TO</h1>
+                    <h1 style="font-size: 75px; color: rgba(177, 135, 51, 1);">DAWAT</h1>
+                    <p style="font-size: 19px; font-weight: lighter; margin-top: 15px; line-height: 25px;">The Biggest
+                        Event Management Company in Pakistan with versatile skills and services.</p>
+
+                    <button class="button" style="margin-top: 15px; margin-left: 0px;">Read About Us
+                        <i class="fas fa-angle-double-right"
+                            style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="item"
+                style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Top/2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h1 style="font-size: 75px;">SINDH PUNJAB</h1>
+                    <h1 style="font-size: 75px; color: rgba(177, 135, 51, 1);">BALOCHISTAN KPK</h1>
+                    <p style="font-size: 19px; font-weight: lighter; margin-top: 15px; line-height: 25px;">Dawat
+                        operates across Pakistan! Where ever you are we will be there for you.</p>
+
+                    <button class="button" style="margin-top: 15px; margin-left: 0px;">Read About Us
+                        <i class="fas fa-angle-double-right"
+                            style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="item"
+                style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Top/6.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h1 style="font-size: 75px;">WE DESIGN YOUR</h1>
+                    <h1 style="font-size: 75px; color: rgba(177, 135, 51, 1);">DREAMS</h1>
+                    <p style="font-size: 19px; font-weight: lighter; margin-top: 15px; line-height: 25px;">At Dawat we
+                        take your events as a our personal venture, because we believe Your Story is Ours.</p>
+
+                    <button class="button" style="margin-top: 15px; margin-left: 0px;">See More
+                        <i class="fas fa-angle-double-right"
+                            style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="item"
+                style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Top/5.jpg'); background-repeat: no-repeat; background-size: cover">
+                <div class="content">
+                    <h1 style="font-size: 75px;">DESTINATION</h1>
+                    <h1 style="font-size: 75px; color: rgba(177, 135, 51, 1);">WEDDINGS</h1>
+                    <p style="font-size: 19px; font-weight: lighter; margin-top: 15px; line-height: 25px;">Whether it is
+                        Thialand or Srilanka, Turkey or Azerbaijan, Dawat can plan a fabulous wedding, miles away for
+                        you.</p>
+
+                    <button class="button" style="margin-top: 15px; margin-left: 0px;">See More
+                        <i class="fas fa-angle-double-right"
+                            style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="carousel_nav">
+                <span class="carousel_btn"></span>
+                <span class="carousel_btn"></span>
+                <span class="carousel_btn"></span>
+            </div> -->
+        </div>
+
+        <div class="carousel_hall">
+            <h1
+                style="color: rgba(177, 135, 51, 0.729); font-size: 50px; display: flex ;justify-content: center; align-content: center; padding-top: 20px;">
+                Your Story is Ours</h1>
+
+            <div class="slider">
+
+                <div class="slider_item">
+                    <img src="/assets/Images/Home/SlideShow/Carousel_Halls/1.jpg">
+                </div>
+
+                <div class="slider_item">
+                    <img src="/assets/Images/Home/SlideShow/Carousel_Halls/2.jpg">
+                </div>
+
+                <div class="slider_item">
+                    <img src="/assets/Images/Home/SlideShow/Carousel_Halls/3.jpg">
+                </div>
+
+                <div class="slider_item">
+                    <img src="/assets/Images/Home/SlideShow/Carousel_Halls/4.jpg">
+                </div>
+
+                <div class="slider_item">
+                    <img src="/assets/Images/Home/SlideShow/Carousel_Halls/5.jpg">
+                </div>
+
+                <div class="slider_item">
+                    <img src="/assets/Images/Home/SlideShow/Carousel_Halls/6.jpg">
+                </div>
+
+
+                <button id="next" style="right: 100px;">></button>
+                <button id="prev" style="left: 100px;">
+                    <</button>
+            </div>
+
+
+        </div>
+
+        <div class="dawat_abt center">
+            <div class="column">
+                <img src="/assets/Images/Home/SideBar/logo_2.png" alt="Dawat Pakistan"
+                    style="margin-top: 30px;">
+            </div>
+
+            <div class="column">
+                <h2
+                    style="color: rgb(28, 25, 25); font-weight: bold; font-size: 30px; margin-top: 30px; margin-bottom: 40px;">
+                    WHAT IS DAWAT?</h2>
+
+                <div>
+                    <p class="abt-list" style="color:#969696;font-size:14px"> Complete Event Management Company</p>
+                    <p class="abt-list" style="color:#969696;font-size:14px"> Wedding and Party Caterers</p>
+                    <p class="abt-list" style="color:#969696;font-size:14px"> Public Relations Agency</p>
+                    <p class="abt-list" style="color:#969696;font-size:14px"> Photography Studio</p>
+                    <p class="abt-list" style="color:#969696;font-size:14px"> Interior and Set Designers</p>
+                    <p class="abt-list" style="color:#969696;font-size:14px"> Institute for Event Management Courses</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="call_for_action center">
+            <p class="call_for_action_txt"> Dawat is a one window solution for your Events</p>
+            <button class="button">Our Services
+                <i class="fas fa-angle-double-right" style="font-size: 13px; color: white; margin-left: 10px;"></i>
+            </button>
+        </div>
+
+        <div class="dream_event">
+            <h2 class="zigzagline">YOUR DREAM EVENT</h2>
+            <p>Dawat provide countless options from Wedding to Mehndi or a Birthday party.</p>
+            <p>We have various interactive ideas, you can mix and match all elements to design the perfect event for
+                you.</p>
+
+
+            <div class="carousel_event">
+                <div class="carousel_event_nav">
+                    <button class="carousel_event_nav_btn"
+                        style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Icons/heart.png'); background-repeat: no-repeat; background-size: cover;"></button>
+                    <button class="carousel_event_nav_btn"
+                        style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Icons/diamond.png'); background-repeat: no-repeat; background-size: cover;"></button>
+                    <button class="carousel_event_nav_btn"
+                        style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Icons/gift.png'); background-repeat: no-repeat; background-size: cover;"></button>
+                    <button class="carousel_event_nav_btn"
+                        style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Icons/suitcase.png'); background-repeat: no-repeat; background-size: cover;"></button>
+                    <button class="carousel_event_nav_btn"
+                        style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Icons/rocket.png'); background-repeat: no-repeat; background-size: cover;"></button>
+                </div>
+
+                <div class="carousel_event_content">
+
+                    <div class="event_item event_item_selected">
+                        <div class="carousel_event_content_col1"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Backgrounds/1.jpg'); background-repeat: no-repeat; background-size: cover">
+                            <h2 style="color: black; margin-bottom: 15px; font-size: 30px;">The Wedding</h2>
+                            <p style="text-align: left; font-weight: lighter; font-size: 15px; line-height: 23px; padding-right:25px ;">We take care of each and every detail of your dream for the perfect wedding. To make this day perfect as your plan we have various options to work-out, and precisely four amazing themes for the amazing event. We can customize each theme as per your requirements, and can add lots of creative and unique ideas to make your day really special.</p>
+                            <button class="button"
+                                style="width:150px ;margin-top: 15px; margin-left: 0px; background-color: rgba(177, 135, 51, 1); border: none;">See
+                                More
+                                <i class="fas fa-angle-double-right"
+                                    style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                            </button>
+                        </div>
+
+                        <div class="carousel_event_content_col2"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/1.jpg'); background-repeat: no-repeat; background-size: cover">
+
+                        </div>
+
+                    </div>
+
+                    <div class="event_item">
+                        <div class="carousel_event_content_col1"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Backgrounds/2.jpg'); background-repeat: no-repeat; background-size: cover">
+                            <h2 style="color: black; margin-bottom: 15px; font-size: 30px;">The Mehndi</h2>
+                            <p style="text-align: left; font-weight: lighter; font-size: 15px; line-height: 23px; padding-right:25px ;">We can make your Mehndi or Dholki event memorable!<br>We have various options to work-out, different props and exciting ideas to follow, and some amazing themes that you may choose from.<br>Lets us work on some crazy ideas and make your bhangra night filled with awesomeness!
+                            </p>
+                            <button class="button"
+                                style="width:150px ;margin-top: 15px; margin-left: 0px; background-color: rgba(177, 135, 51, 1); border: none;">See
+                                More
+                                <i class="fas fa-angle-double-right"
+                                    style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="carousel_event_content_col2"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/2.jpg'); background-repeat: no-repeat; background-size: cover">
+
+                        </div>
+
+                    </div>
+
+                    <div class="event_item">
+                        <div class="carousel_event_content_col1"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Backgrounds/3.jpg'); background-repeat: no-repeat; background-size: cover">
+                            <h2 style="color: black; margin-bottom: 15px; font-size: 30px;">Birthday</h2>
+                            <p style="text-align: left; font-weight: lighter; font-size: 15px; line-height: 23px; padding-right:25px ;">We ensure to manage everything from planning to execution, be it food, decoration, entertainment or anything else that you have in mind.</p>
+                            <button class="button"
+                                style="width:150px ;margin-top: 15px; margin-left: 0px; background-color: rgba(177, 135, 51, 1); border: none;">See
+                                More
+                                <i class="fas fa-angle-double-right"
+                                    style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                            </button>
+                        </div>
+
+                        <div class="carousel_event_content_col2"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/3.jpg'); background-repeat: no-repeat; background-size: cover">
+
+                        </div>
+
+                    </div>
+
+                    <div class="event_item">
+                        <div class="carousel_event_content_col1"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Backgrounds/4.jpg'); background-repeat: no-repeat; background-size: cover">
+                            <h2 style="color: black; margin-bottom: 15px; font-size: 30px;">Corporate Events</h2>
+                            <p style="text-align: left; font-weight: lighter; font-size: 15px; line-height: 23px; padding-right:25px ;">Professionally executed events are the perfect platform to link knowledge with emotion to deliver memorable messages.</p>
+                            <p style="text-align: left; font-weight: lighter; font-size: 15px; line-height: 23px; padding-right:25px ;">There is no limit to what can be done. Call us to discuss your objectives and we will provide creative, impressive and cost effective solutions every time.</p>
+                            <button class="button"
+                                style="width:150px ;margin-top: 15px; margin-left: 0px; background-color: rgba(177, 135, 51, 1); border: none;">See
+                                More
+                                <i class="fas fa-angle-double-right"
+                                    style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                            </button>
+                        </div>
+
+                        <div class="carousel_event_content_col2"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/4.jpg'); background-repeat: no-repeat; background-size: cover">
+
+                        </div>
+
+                    </div>
+
+                    <div class="event_item">
+                        <div class="carousel_event_content_col1"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/Backgrounds/1.jpg'); background-repeat: no-repeat; background-size: cover">
+                            <h2 style="color: black; margin-bottom: 15px; font-size: 30px;">Other Events</h2>
+                            <p style="text-align: left; font-weight: lighter; font-size: 15px; line-height: 23px; padding-right:25px ;">Dawat has collaborated with world renown international and local clients to successfully market and launch products throughout Pakistan. Whether launching a brand, a business or a product, the basic principles are the same. You will only get one opportunity to create a powerful affinity with your target audience.</p>
+
+                                <button class="button" style="width:150px ;margin-top: 15px; margin-left: 0px; background-color: rgba(177, 135, 51, 1); border: none;">See More
+                                    <i class="fas fa-angle-double-right" style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                                </button>
+                        </div>
+
+                        <div class="carousel_event_content_col2"
+                            style="background-image: url('/assets/Images/Home/SlideShow/Carousel_Event/5.jpg'); background-repeat: no-repeat; background-size: cover">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="company_profile">
+
+            <div class="company_profile_text">
+                <h1 class="zigzagline2" style="color: white;">OUR COMPANY PROFILE</h1>
+                <p style="text-align: left;">With an aim to inform its client about the services, products and different
+                    packages in a creative and user-friendly manner, Dawat maintains a Company Profile which you can
+                    download by clicking the button below.</p>
+                <button class="button1">Download
+                    <i class="fas fa-angle-double-right" style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                </button>
+            </div>
+
+            <div class="company_profile_img">
+                <img src="/assets/Images/Home/CompanyProfile/Book.png">
+            </div>
+        </div>
+
+        <div class="our_galleries">
+            <h1 class="zigzagline">OUR GALLERIES</h1>
+            <p>Have a look at our galleries to create your own style for your event with us.</p>
+
+            <div class="wedding_gallery">
+                <div class="description"
+                    style=" background-image: url('/assets/Images/Home/WeddingGallery/1.png');background-repeat: no-repeat; margin-right: 15px;">
+                    <h3 style="color: black;" class="zigzagline2">WEDDING GALLERY</h3>
+                    <p
+                        style="text-align: left; font-size: 15px; font-weight: lighter; width: 400px; line-height: 20px;">
+                        We take care of each and every detail of your dream for the marriage. To make it perfect as your
+                        plan we have various options and amazing themes.</p>
+                    <button class="button2">View Now</button>
+                </div>
+                <div class="image"
+                    style="background-image: url('/assets/Images/Home/WeddingGallery/img1.jpg');background-repeat: no-repeat; margin-left: 15px;">
+                </div>
+            </div>
+
+            <div class="wedding_gallery">
+                <div class="image"
+                    style="background-image: url('/assets/Images/Home/WeddingGallery/img2.jpg'); background-repeat: no-repeat; margin-right: 15px;">
+                </div>
+                <div class="description"
+                    style=" background-image: url('/assets/Images/Home/WeddingGallery/2.png');background-repeat: no-repeat; margin-left: 15px;">
+                    <h3 style="color: black;" class="zigzagline2">MEHNDI GALLERY</h3>
+                    <p
+                        style="text-align: left; font-size: 15px; font-weight: lighter; width: 400px; line-height: 20px;">
+                        To make your Mehndi the perfect event, we have various options to work-out, with amazing themes
+                        for the event.</p>
+                    <button class="button2">View Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="call_for_action center">
+            <p style="width: 600px; text-align: center;" class="call_for_action_txt">With Dawat you can have control on
+                every aspect of your event</p>
+            <button class="button">Our Services
+                <i class="fas fa-angle-double-right" style="font-size: 13px; color: white; margin-left: 10px;"></i>
+            </button>
+        </div>
+
+        <div class="paralex">
+            <h1>MAKE YOUR EVENTS COME TO LIFE WITH DAWAT</h1>
+            <h5 style="margin-top: 15px;">Tons of ideas to provide countless options.</h5>
+
+            <div>
+                <button class="button3">Contact Us
+                    <i class="fas fa-angle-double-right" style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                </button>
+
+                <button class="button4">Services For You
+                    <i class="far fa-star" style="font-size: 13px; color: white; margin-left: 10px;"></i>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer style="background-color: rgb(32, 27, 27);">
+
+        <div class="footerContent">
+
+            <div class="column">
+                <h2 class="footerHeading zigzag">About Dawat</h2>
+                <p class="AboutText">DAWAT is an Event Management, Catering, Photography and PR company located in
+                    Pakistan, which specializes in <span style="color: #ffffff;">weddings, parties, corporate
+                        events</span> and much more. Dawat
+                    uses its expertise to create powerful impressions, to make your event leave a lasting impression.
+                </p>
+            </div>
+
+            <div class="column">
+                <h2 class="footerHeading zigzag">Recent Posts</h2>
+                <ul class="PostsText">
+                    <li>
+                        <a href="#" style="text-decoration: none;">Bring back the Concerts</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none;">Celebrating Singles</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none;">Designers that reigned this season</a>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none;">Interactive Birthdays</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2 class="footerHeading zigzag">Contact Us</h2>
+                <div class="ContactInfo">
+                    <p><i class="fa fa-map-marker" style="margin-right:10px; margin-bottom: 10px;"></i>14C, 3rd Floor,
+                        Lane-9, Islamabad, Pakistan</p>
+                    <p><i class="fa fa-phone" style="margin-right:10px; margin-bottom: 10px;"></i>0322 7888061, 0335
+                        7888062</p>
+                    <p><i class="fa fa-envelope" style="margin-right:10px; margin-bottom: 10px;"></i>info@dawatpk.com
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="belowFooter">
+            <p id="copyright">© Copyright 2022 Dawat Pakistan</p>
+        </div>
+
+    </footer>
+
     <script src="/js_Files/script.js"></script>
-
-    
+    <script src="/js_Files/home.js"></script>
 </body>
+
 </html>

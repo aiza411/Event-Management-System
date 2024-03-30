@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const sidebarToggle = document.querySelector('.sidebar-toggle');
+    const sidebarToggle = document.querySelector('.sidebarBtn');
     const sidebar = document.querySelector('.sidebar');
 
     sidebarToggle.addEventListener('click', () => {
