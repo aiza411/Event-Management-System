@@ -1,0 +1,58 @@
+#navigationBar{
+    z-index: 101;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    position: fixed;
+    color: rgb(233, 230, 230);
+}
+
+.sidebarBtn {
+    background-color: rgba(242, 206, 88, 0.767);
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    z-index: 1100
+}
+
+#NavLogo{
+    position: absolute;
+    left: 0;
+}
+
+#LogoImg{
+    height: 40px;
+}
+
+.menu{
+    margin-left: 30px;
+}
+
+.menu a {
+    margin-right: 20px;
+    font-size: 19px;
+    background-repeat: no-repeat;
+    background-size: 4px 4px;
+    background-position: right center;
+    padding-right: 19px;
+    text-decoration: none;
+    color: rgb(233, 230, 230);
+}
+
+.menu a:not(:last-child) {
+    background-image: url('../assets/Images/Footer/square.png');
+}
+
+.menu a:last-child {
+    background-image: none;
+    margin-right: 0;
+}

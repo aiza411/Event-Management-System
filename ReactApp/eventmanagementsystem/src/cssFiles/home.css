@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(233, 230, 230);
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.item{
+    height: 750px;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    display: none;
+    opacity: 0.8;
+    transform: scale(1);
+    position: relative;
+}
+
+.item_selected{
+    display: block;
+    transform: scale(1);
+    animation: zoomIn 7s forwards;
+    opacity: 1;
+}
+
+.content h1{
+    font-size: 75px;
+}
+
+.content p{
+    font-size: 19px; 
+    font-weight: lighter; 
+    margin-top: 15px; 
+    line-height: 25px;
+    text-align: left;
+}
+
+
+@keyframes zoomIn {
+    from {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+.carousel_nav{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel_btn{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.carousel_btn_selected{
+    background-color: white;
+    opacity: 0.7;   
+}
+
+
+.carousel_hall{
+    background-image: url('../assets/Images/Franchise/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel_hall h1{
+    color: rgba(177, 135, 51, 0.729); 
+    font-size: 50px; 
+    display: flex ;
+    justify-content: center; 
+    align-content: center; 
+    padding-top: 20px;
+}
+
+
+.dawat_abt{
+    background-image: url('../assets/Images/Franchise/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.dawat_abt .column img{
+    margin-top: 30px; 
+}
+
+.dawat_abt .column h2{
+    color: rgb(28, 25, 25);
+    font-weight: bold;
+    font-size: 30px; 
+    margin-top: 30px; 
+    margin-bottom: 40px;
+}
+
+.call_for_action{
+    height: 150px;
+    width: 100%;
+    background-color: rgba(177, 135, 51, 0.729);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    display: flex ;
+    justify-content: center;
+    align-content: center;
+}
+
+.abt-list{
+    margin-top: 20px;
+    background-image: url('../assets/Images/Home/checkbox.jpg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left center;
+    padding-left: 30px;
+    color:#969696;font-size:14px
+}
+
+.call_for_action_txt{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.fa-angle-double-right{
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-star{
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
+}
+
+.button {
+    height: 40px;
+    padding: 10px 20px;
+    background-color: rgba(177, 135, 51,0.1);
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.dream_event{
+    background-image: url('../assets/Images/Franchise/background.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.zigzagline{
+    color: rgb(18, 17, 17);
+    background-image: url('../assets/Images/Home/zigzag.png');
+    background-repeat: no-repeat;
+    background-size: 70px 60px;
+    background-position: center bottom;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.dream_event p{
+    color: rgb(24, 21, 21);
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.carousel_event{
+    width: 1000px;
+    height: 360px;
+    background-color: aqua;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel_event_nav{
+    background-color: black;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel_event_content{
+    background-color: beige;
+    height: 100%;
+    width: 930px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.carousel_event_nav_btn{
+    height: 22px;
+    width: 22px;
+    background-color: rgba(177, 135, 51,0.1);
+    border: none;
+}
+
+.carousel_event_nav_btn:hover{
+    filter: brightness(0) invert(1);
+}
+
+.event_carousel_btn_selected{
+    filter: brightness(0) invert(1);  
+}
+
+
+.carousel_event_content_col1 p{
+    text-align: left;
+    font-weight: lighter; 
+    font-size: 15px; 
+    line-height: 23px; 
+    padding-right:25px ;
+}
+
+.carousel_event_content_col1 h2{
+    color: black; 
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.event_item{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.event_item_selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel_event_content_col1{
+    width: 50%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px;
+}
+
+.carousel_event_content_col2{
+    width: 50%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    flex: 1;
+}
+
+
+
+
+.company_profile{
+    background-image: url('../assets/Images/Home/CompanyProfile/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company_profile_text{
+    height: inherit;
+    width: auto;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-left: 100px;
+}
+
+.company_profile_text p{
+    width: 450px;
+    font-size: 17px;
+}
+
+.company_profile_img{
+    height: inherit;
+    width: 50%;
+    margin-bottom: 35px;
+}
+
+.company_profile_img img{
+    height: 430px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.zigzagline2{
+    background-image: url('../assets/Images/Home/zigzag.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: left bottom;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.button1 {
+    height: 40px;
+    width: 150px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgba(177, 135, 51,0.1);
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+.our_galleries{
+    background-image: url('../assets/Images/Franchise/background.jpg');
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_galleries p{
+    color: rgb(24, 21, 21);
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.wedding_gallery{
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wedding_gallery .description{
+    height: inherit;
+    width: 500px;
+    border: 2px solid rgb(206, 204, 204);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 30px;
+}
+
+.wedding_gallery .image{
+    height: inherit;
+    width: 500px;
+    border: 2px solid rgb(206, 204, 204);    
+}
+
+.description p{
+    text-align: left;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 400px;
+    line-height: 20px;
+}
+
+
+.button2 {
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(177, 135, 51, 0.729);
+    color: rgba(177, 135, 51, 0.729);
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.paralex{
+    width: 100%;
+    height: 350px;
+    background-image: url('../assets/Images/Home/Paralex/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.9;
+}
+
+.paralex h5{
+    margin-top: 15px;
+}
+
+
+.button3 {
+    height: 50px;
+    width: 170px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    background-color: rgba(177, 135, 51,1);
+    border: 2px solid rgba(177, 135, 51,1);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button4 {
+    height: 50px;
+    width: 200px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255,0.1);
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+#myBtn {
+    position: fixed;
+    background-color: rgba(177, 135, 51,1);
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+    z-index: 1300;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 18px;
+  }
+  
+#myBtn:hover {
+    background-color: rgb(221, 165, 53);
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider_item{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_item img{
+    height: 500px;
+}
+
+#next,#prev{
+    position: absolute;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 1600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}

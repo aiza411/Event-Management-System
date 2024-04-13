@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(233, 230, 230);
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.franchise_top{
+    background-image: url('../assets/Images/Franchise/top_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business_franchise{
+    background-image: url('../assets/Images/Franchise/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.business_franchise h1{
+    color: rgba(186, 158, 68, 0.852);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.business_franchise p{
+    color: rgb(98, 97, 97);
+    font-size: 15px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 23px;
+}
+
+.business_franchise h3{
+    color: rgba(186, 158, 68, 0.852);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.business_franchise ul{
+    color: rgb(98, 97, 97);
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.business_franchise li{
+    color: rgb(98, 97, 97);
+    font-size: 15px;
+    text-align: center;
+    line-height: 23px;
+}
+
+
+.success{
+    background-image: url('../assets/Images/Franchise/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 100px;
+}
+
+.success h2{
+    color: rgba(186, 158, 68, 0.852);
+    font-size: 35px;
+    text-align: left;
+    padding-top: 55px;
+    margin-bottom: 20px;   
+}
+
+.success_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+
+.success_col{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;  
+    width: 100%;
+    height: 100%; 
+}
+
+.success_col h3{
+    color: rgba(186, 158, 68, 0.852);
+    font-size: 30px;
+    text-align: left;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.success_col p{
+    color: rgb(98, 97, 97);
+    font-size: 15px;
+    text-align: left;
+    padding-right: 10%;
+    line-height: 25px;
+}
+
+.success_text{
+    padding-top: 70px;
+    color: rgb(98, 97, 97);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.about_yourself{
+    background-color: rgb(240, 242, 245);
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.about_yourself h2{
+    color: rgba(186, 158, 68, 0.852);
+    font-size: 30px;
+    text-align: left;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+label{
+    color: rgb(98, 97, 97);
+}
+
+input[type=text],textarea {
+    width: 700px;
+    padding: 10px 20px;
+    margin: 10px 0 25px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(98, 97, 97);
+}
