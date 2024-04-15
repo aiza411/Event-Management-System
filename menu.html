@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            padding-bottom: 100px; /* Adjusted padding for the footer */
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #c5ac76;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .menu-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #8B4513;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #5C4033;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .ending-line {
+            width: 50%;
+            border-bottom: 1px solid #c5ac76;
+            margin: 40px auto 30px;
+        }
+
+        .additional-info {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+            color: black;
+        }
+
+        .footer {
+            background-color: #3d3d3d;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="menu.jpg" alt="Header Image">
+    <div class="content">
+        <h1> Menu</h1>
+
+        <!-- Desi Menu -->
+        <div class="menu">
+            <h2> Desi Menu</h2>
+            <table>
+                <tr>
+                    <th>Menu One</th>
+                    <th>Menu Two</th>
+                    <th>Menu Three</th>
+                    <th>Menu Four</th>
+                    <th>Menu Five</th>
+                </tr>
+                <tr>
+                    <td>Mutton Yekhni Pullao</td>
+                    <td>Chicken Steam Roast</td>
+                    <td>Pasta Counter 2 Types</td>
+                    <td>Grilled Fish Lemon Butter Sauce</td>
+                    <td>Jumbo Fried Prawns</td>
+                </tr>
+                <tr>
+                    <td>Singaporean Rice</td>
+                    <td>Chicken Karahi</td>
+                    <td>Fried Fish (Sormai)</td>
+                    <td>Tandoori Chicken</td>
+                    <td>Dynamite Chicken</td>
+                </tr>
+                <tr>
+                    <td>Chicken Biryani Masala Wali Aloo</td>
+                    <td>Mutton Kunna</td>
+                    <td>Paratha</td>
+                    <td>Turkish Kebab (Chicken)</td>
+                    <td>Garlic Naan</td>
+                </tr>
+                <tr>
+                    <td>Mutton Afghani Pullaos</td>
+                    <td>Chicken Nawabi Qorma</td>
+                    <td>Chicken Backed Pie with Mashroom</td>
+                    <td>Fried Fish</td>
+                    <td>Chicken Strip</td>
+                </tr>
+                <tr>
+                    <td>Rs.1870 per person</td>
+                    <td>Rs.1700 per person</td>
+                    <td>Rs.1670 per person</td>
+                    <td>Rs.1900 per person</td>
+                    <td>Rs.1500 per person</td>
+                </tr>
+            </table>
+            <div class="ending-line"></div> <!-- Ending line after Desi Menu -->
+        </div>
+
+        <!-- Continental Menus -->
+        <div class="menu">
+            <img src="continental.jpg" alt="Continental Menu Image">
+            <h2> Continental Menus</h2>
+            <table>
+                <tr>
+                    <th>Menu One</th>
+                    <th>Menu Two</th>
+                    <th>Menu Three</th>
+                    <th>Menu Four</th>
+                    <th>Menu Five</th>
+                </tr>
+                <tr>
+                    <td>Spaghetti Bolognese</td>
+                    <td>Grilled Salmon</td>
+                    <td>Beef Tenderloin</td>
+                    <td>Chicken Piccata</td>
+                    <td>Margherita Pizza</td>
+                </tr>
+                <tr>
+                    <td>Caesar Salad</td>
+                    <td>Caprese Salad</td>
+                    <td>Shrimp Scampi</td>
+                    <td>Greek Salad</td>
+                    <td>Beef Stroganoff</td>
+                </tr>
+                <tr>
+                    <td>Garlic Bread</td>
+                    <td>Fettuccine Alfredo</td>
+                    <td>Bruschetta</td>
+                    <td>Penne alla Vodka</td>
+                    <td>Tiramisu</td>
+                </tr>
+                <tr>
+                    <td>Rs.1970 per person</td>
+                    <td>Rs.2000 per person</td>
+                    <td>Rs.1550 per person</td>
+                    <td>Rs.1900 per person</td>
+                    <td>Rs.1850 per person</td>
+                </tr>
+            </table>
+            <div class="ending-line"></div> <!-- Ending line after Desi Menu -->
+        </div>
+
+        <!-- Hi Tea Menus -->
+        <div class="menu">
+            <img src="hi tea.jpg" alt="hi tea Menu Image">
+            <h2> Hi Tea Menus</h2>
+            <table>
+                <tr>
+                    <th>Menu One</th>
+                    <th>Menu Two</th>
+                    <th>Menu Three</th>
+                    <th>Menu Four</th>
+                    <th>Menu Five</th>
+                </tr>
+                <tr>
+                    <td>Assorted Finger Sandwiches</td>
+                    <td>Mini Quiches</td>
+                    <td>Chocolate Eclairs</td>
+                    <td>Lemon Bars</td>
+                    <td>Mini Pies</td>
+                </tr>
+                <tr>
+                    <td>Scones</td>
+                    <td>Fruit Tartlets</td>
+                    <td>Cheese Platter</td>
+                    <td>Chicken Salad Wraps</td>
+                    <td>Deviled Eggs</td>
+                </tr>
+                <tr>
+                    <td>Clotted Cream</td>
+                    <td>Cucumber Tea Sandwiches</td>
+                    <td>Macarons</td>
+                    <td>Shortbread Cookies</td>
+                    <td>Tea Selection</td>
+                </tr>
+                <tr>
+                    <td>Rs.1000 per person</td>
+                    <td>Rs.1200 per person</td>
+                    <td>Rs.1650 per person</td>
+                    <td>Rs.2110 per person</td>
+                    <td>Rs.1900 per person</td>
+                </tr>
+            </table>
+            <div class="ending-line"></div> <!-- Ending line after Desi Menu -->
+        </div>
+
+        <!-- Iftar Menus -->
+        <div class="menu">
+            <img src="iftar.jpg" alt="iftar Menu Image">
+            <h2> Iftar Menus</h2>
+            <table>
+                <tr>
+                    <th>Menu One</th>
+                    <th>Menu Two</th>
+                    <th>Menu Three</th>
+                    <th>Menu Four</th>
+                    <th>Menu Five</th>
+                </tr>
+                <tr>
+                    <td>Dates</td>
+                    <td>Samosas</td>
+                    <td>Fruit Chaat</td>
+                    <td>Pakoras</td>
+                    <td>Rooh Afza</td>
+                </tr>
+                <tr>
+                    <td>Lentil Soup</td>
+                    <td>Hummus</td>
+                    <td>Spinach Fatayer</td>
+                    <td>Labneh</td>
+                    <td>Mutton Biryani</td>
+                </tr>
+                <tr>
+                    <td>Chicken Biryani</td>
+                    <td>Lamb Kebabs</td>
+                    <td>Beef Haleem</td>
+                    <td>Fish Curry</td>
+                    <td>Falafel</td>
+                </tr>
+                <tr>
+                    <td>Rs.2350 per person</td>
+                    <td>Rs.2100 per person</td>
+                    <td>Rs.1900 per person</td>
+                    <td>Rs.2250 per person</td>
+                    <td>Rs.1500 per person</td>
+                </tr>
+            </table>
+            <div class="ending-line"></div> <!-- Ending line after Desi Menu -->
+        </div>
+
+        <!-- Breakfast Menus -->
+        <div class="menu">
+            <img src="breakfast.jpg" alt="Header Image">
+            <h2> Breakfast Menus</h2>
+            <table>
+                <tr>
+                    <th>Menu One</th>
+                    <th>Menu Two</th>
+                    <th>Menu Three</th>
+                    <th>Menu Four</th>
+                    <th>Menu Five</th>
+                </tr>
+                <tr>
+                    <td>Pancakes</td>
+                    <td>Avocado Toast</td>
+                    <td>French Toast</td>
+                    <td>Waffles</td>
+                    <td>Eggs Benedict</td>
+                </tr>
+                <tr>
+                    <td>Bacon</td>
+                    <td>Smoothie Bowl</td>
+                    <td>Omelette</td>
+                    <td>Breakfast Burrito</td>
+                    <td>Sausages</td>
+                </tr>
+                <tr>
+                    <td>Scrambled Eggs</td>
+                    <td>Granola Parfait</td>
+                    <td>Fresh Fruit Salad</td>
+                    <td>Greek Yogurt with Berries</td>
+                    <td>Croissants</td>
+                </tr>
+                <tr>
+                    <td>Rs.1570 per person</td>
+                    <td>Rs.1000 per person</td>
+                    <td>Rs.1670 per person</td>
+                    <td>Rs.1200 per person</td>
+                    <td>Rs.2100 per person</td>
+                </tr>
+            </table>
+            <div class="ending-line"></div> <!-- Ending line after Desi Menu -->
+        </div>
+        <div class="additional-info">
+            <p>Prices are for 100 people and will increase if ordered for less.</p>
+            <p>Mineral Water & Cold Drinks are charged separately.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Dawat. All Rights Reserved.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
