@@ -1,0 +1,29 @@
+.newsLetter-form {
+    text-align: center;
+  }
+  
+  .newsLetter-form input[type="email"] {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: grey;
+  }
+  
+  .newsLetter-form button[type="submit"] {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #c5ac76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

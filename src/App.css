@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Center the content horizontally and vertically */
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* Use min-height to ensure the container expands if content exceeds viewport height */
+  padding: 20px; /* Add padding to provide space around the content */
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the form */
+.form {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  padding: 20px;
+}
+
+/* Style the map container */
+.map {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px; /* Add spacing between map and other elements */
+}
+
+/* Style the header image */
+.header img {
+  max-width: 100%; /* Ensure the header image does not exceed its container's width */
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+/* Optional: Add styles to adjust spacing between pages */
+.content > * {
+  margin-bottom: 20px;
+}
+
+/* Adjust styles for the footer */
+.footer {
+  width: 100%;
+  background-color: #3d3d3d;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
 }

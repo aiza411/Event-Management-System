@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import ContactForm from './components/ContactForm';
+import FindUs from './components/FindUs';
+import NewsLetter from './components/NewsLetter';
+import MenuPage from './components/MenuPage'; // Import the MenuPage component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="content">
+        {/* Render ContactForm, FindUs, and NewsLetter components */}
+        <ContactForm />
+        <hr />
+        <FindUs />
+        <hr />
+        <NewsLetter />
+        
+        {/* Render MenuPage component */}
+        <MenuPage />
+      </div>
     </div>
   );
 }
