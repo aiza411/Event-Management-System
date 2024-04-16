@@ -61,27 +61,27 @@ export default function HallCarousel() {
             <div className="slider">
 
                 <div className="slider_item">
-                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/1.jpg")}/>
+                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/1.jpg")} alt="img"/>
                 </div>
 
                 <div className="slider_item">
-                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/2.jpg")}/>
+                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/2.jpg")}  alt="img"/>
                 </div>
 
                 <div className="slider_item">
-                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/3.jpg")}/>
+                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/3.jpg")} alt="img"/>
                 </div>
 
                 <div className="slider_item">
-                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/4.jpg")}/>
+                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/4.jpg")} alt="img"/>
                 </div>
 
                 <div className="slider_item">
-                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/5.jpg")}/>
+                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/5.jpg")} alt="img"/>
                 </div>
 
                 <div className="slider_item">
-                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/6.jpg")}/>
+                    <img src={require("../assets/Images/Home/SlideShow/Carousel_Halls/6.jpg")} alt="img"/>
                 </div>
 
 

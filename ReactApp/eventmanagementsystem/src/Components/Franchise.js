@@ -1,5 +1,8 @@
 import "../cssFiles/franchise.css";
 import "../cssFiles/home.css";
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import BackToTop from './Components/BackToTop.js';
 import { useState } from "react";
 
 function Franchise() {
@@ -56,6 +59,7 @@ function Franchise() {
 
   return (
     <>
+    <Navbar/>
       <main>
         <div className="franchise_top">
           <h1
@@ -294,6 +298,8 @@ function Franchise() {
           </div>
         </div>
       </main>
+      <Footer/>
+      <BackToTop/>
     </>
   );
 }

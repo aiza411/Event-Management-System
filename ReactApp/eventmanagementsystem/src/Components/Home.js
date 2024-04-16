@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../cssFiles/home.css";
 import TopCarousel from "./TopCarousel";
 import AboutSection from "./AboutSection";
@@ -6,11 +6,15 @@ import Paralex from "./Paralex";
 import CompanyProfile from "./CompanyProfile";
 import OurGalleries from "./OurGalleries";
 import DreamEvent from "./DreamEvent";
+import BackToTop from '../Components/BackToTop.js';
 import HallCarousel from "./HallCarousel";
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 export default function Home() {
   return (
     <>
+    <Navbar/>
       <TopCarousel />
       <HallCarousel/>
       <AboutSection />
@@ -43,6 +47,8 @@ export default function Home() {
       </div>
 
       <Paralex/>
+      <Footer/>
+      <BackToTop/>
     </>
   );
 }

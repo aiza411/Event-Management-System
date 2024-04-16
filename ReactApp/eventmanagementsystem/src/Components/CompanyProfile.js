@@ -22,7 +22,7 @@ export default function CompanyProfile() {
         </div>
 
         <div className="company_profile_img">
-          <img src={require("../assets/Images/Home/CompanyProfile/Book.png")} />
+          <img src={require("../assets/Images/Home/CompanyProfile/Book.png")} alt="Book"/>
         </div>
       </div>
     </>
