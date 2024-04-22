@@ -1,5 +1,6 @@
 import "../cssFiles/navbar.css";
 import "../cssFiles/sidebar.css";
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -35,9 +36,9 @@ function Navbar() {
             <Link to="/">Home</Link>
             <a href="/">Services</a>
             <a href="/">Gallery</a>
-            <a href="/">Menu</a>
+            <Link to="/menu">Menu</Link>
             <Link to="/franchise">Franchise</Link>
-            <a href="/">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </div>
 
           <button className="sidebarBtn">

@@ -1,5 +1,11 @@
 .newsLetter-form {
     text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .newsLetter-form input[type="email"] {
@@ -12,6 +18,7 @@
     border-radius: 5px;
     font-size: 16px;
     color: grey;
+    margin-bottom: 20px;
   }
   
   .newsLetter-form button[type="submit"] {

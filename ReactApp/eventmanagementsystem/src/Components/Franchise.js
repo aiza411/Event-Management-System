@@ -1,8 +1,8 @@
 import "../cssFiles/franchise.css";
 import "../cssFiles/home.css";
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import BackToTop from './Components/BackToTop.js';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
+import BackToTop from '../Components/BackToTop.js';
 import { useState } from "react";
 
 function Franchise() {
@@ -198,7 +198,7 @@ function Franchise() {
         <div className="about_yourself">
           <h2>Tell us about Yourself</h2>
           <div className="intro_form">
-            <form action="" autoComplete="on">
+            <form action="" autoComplete="on" style={{width:"100%"}}>
               <label htmlFor="fname">Your Name (required)</label>
               <br />
               <input

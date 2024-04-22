@@ -4,14 +4,12 @@ header {
   
   header img {
     width: 100%;
-    max-width: 1450px;
     height: auto;
   }
   
   header h1 {
     color: #c5ac76;
     font-size: 50px;
-    font-family: "poppins", Poppins, Bold;
     margin-bottom: 20px;
     position: relative;
   }
