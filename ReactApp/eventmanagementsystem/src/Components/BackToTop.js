@@ -1,4 +1,5 @@
 import "../cssFiles/backToTop.css";
+import '@fortawesome/fontawesome-free/css/all.css';
 import { useEffect } from "react";
 
 export default function BackToTop() {

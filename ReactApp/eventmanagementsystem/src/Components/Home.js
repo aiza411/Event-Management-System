@@ -10,6 +10,7 @@ import BackToTop from '../Components/BackToTop.js';
 import HallCarousel from "./HallCarousel";
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 export default function Home() {
   return (

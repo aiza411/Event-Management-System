@@ -1,5 +1,6 @@
 import "../cssFiles/navbar.css";
 import "../cssFiles/sidebar.css";
+import '@fortawesome/fontawesome-free/css/all.css';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 
