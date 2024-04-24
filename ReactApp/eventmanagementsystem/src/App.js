@@ -4,6 +4,9 @@ import Home from './Components/Home.js';
 import Franchise from './Components/Franchise.js';
 import MenuPage from "./Components/MenuPage.js";
 import ContactUs from "./Components/ContactUs.js";
+import Services from "./Components/Services";
+import Gallery from "./Components/Gallery";
+
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
         <Route path="/franchise" element={<Franchise />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/contact" element={<ContactUs/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/gallery" element={<Gallery/>} />
       </Routes>
     </Router>
     </>

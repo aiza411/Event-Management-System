@@ -35,8 +35,8 @@ function Navbar() {
 
           <div className="menu">
             <Link to="/">Home</Link>
-            <a href="/">Services</a>
-            <a href="/">Gallery</a>
+            <Link to="/services">Services</Link>
+            <Link to="/gallery">Gallery</Link>
             <Link to="/menu">Menu</Link>
             <Link to="/franchise">Franchise</Link>
             <Link to="/contact">Contact Us</Link>
